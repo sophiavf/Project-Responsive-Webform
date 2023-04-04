@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<main>
+			<div class="leftContainer"><div class="heroImage"></div></div>
+			<div class="rightContainer">
+				
+				<form action="#" novalidate>
+					
+					<div class="formContainer">
+						<h1 class="formTitle">Join our international community today</h1>
+						<!-- email -->
+						<div class="inputContainer">
+							<label for="email"> </label
+							><input
+								type="email"
+								id="email"
+								name="email"
+								minlength="8"
+								required
+							/>
+							<span>Email </span>
+							<div class="error"></div>
+						</div>
+						<!-- country -->
+						<div class="inputContainer">
+							<label for="countries"></label>
+							<select type="text" id="countries" name="countries"></select>
+							<span>country</span>
+							<div class="error"></div>
+						</div>
+						<!-- zip code -->
+						<div class="inputContainer">
+							<label for="zipCode"></label>
+							<input type="text" id="zipCode" name="zipCode" />
+							<span>Zip code</span>
+							<div class="error"></div>
+						</div>
+						<!-- password -->
+						<div class="inputContainer">
+							<label for="password"></label>
+							<input type="password" id="password" name="password" />
+							<span>Password</span>
+							<div class="error"></div>
+						</div>
+						<!-- password confirmation  -->
+						<div class="inputContainer">
+							<label for="password-confirmation"></label>
+							<input
+								type="password"
+								id="password-confirmation"
+								name="password-confirmation"
+							/>
+							<span>Confirm password</span>
+							<div class="error"></div>
+						</div>
+						<div class="gridSpacer"></div>
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
