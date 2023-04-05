@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registration form</title>
+	<script defer src="main.bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+	<body>
+		<main>
+			<div class="leftContainer"><div class="heroImage"></div></div>
+			<div class="rightContainer">
+				<form action="#" novalidate>
+					<div class="formContainer">
+						<h1 class="formTitle">Join our international community today</h1>
+						<!-- email -->
+						<div class="inputContainer">
+							<label for="email"> </label>
+							<span>Email </span>
+							<input type="text" id="email" name="email"/>
+							<div class="error"></div>
+						</div>
+						<!-- country -->
+						<div class="inputContainer">
+							<label for="countries"></label>
+							<span>country</span>
+							<select type="text" id="countries" name="countries"></select>
+							<div class="error"></div>
+						</div>
+						<!-- zip code -->
+						<div class="inputContainer">
+							<label for="zipCode"></label>
+							<span>Zip code</span>
+							<input type="text" id="zipCode" name="zipCode" />
+							<div class="error"></div>
+						</div>
+						
+						<!-- password -->
+						<div class="inputContainer">
+							<label for="password"></label>
+							<span>Password</span>
+							<input type="password" id="password" name="password" />
+							<div class="error"></div>
+						</div>
+						<!-- password confirmation  -->
+						<div class="inputContainer">
+							<label for="password-confirmation"></label>
+							<span>Confirm password</span>
+							<input
+								type="password"
+								id="password-confirmation"
+								name="password-confirmation"
+							/>
+							<div class="error"></div>
+						</div>
+						<div class="gridSpacer"></div>
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
