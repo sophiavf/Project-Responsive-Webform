@@ -116,7 +116,10 @@ function passwordValidity(providedContext) {
 		return pw1.value === pw2.value || (pw1.value && pw2.value) === undefined;
 	} else {
 		//On submit, if password fields are empty or do not match each other, this will return false
-		return pw1.value === pw2.value && (pw1.value && pw2.value) !== undefined;
+		// return pw1.value === pw2.value && (pw1.value && pw2.value) !== undefined;
+		var one = pw1.value === pw2.value;
+		var two = (pw1.value.length && pw2.value.length) !== 0;
+		return one && two; 
 	}
 }
 
